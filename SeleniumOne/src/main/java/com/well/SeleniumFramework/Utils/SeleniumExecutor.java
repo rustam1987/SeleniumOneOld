@@ -20,7 +20,7 @@ public class SeleniumExecutor {
 		Connection con=null;
 		Recordset rs=null;
 		try {
-			con=fillo.getConnection(path+"\\Data.xlsx");
+			con=fillo.getConnection(path+"\\Controller\\ControllerData.xlsx");
 			rs=con.executeQuery(sQuery);
 			
 			while(rs.next()){
